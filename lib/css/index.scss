@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (min-width: 0px){
+    #navigation{
+        display: flex;
+        flex-direction: column;
+        background-color: green;
+        position: relative;
+        text-align: center;
+        #title h1{
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+        #navigator{
+            display: flex;
+            justify-content: space-around;
+            div {
+                margin: 0 auto;
+                p a{
+                    text-decoration: none;
+                    color: inherit;
+                    display: block;
+                    margin-top: 0;
+                    padding-right: 0%;
+                    margin-top: 0;
+                    padding-right: 29%;
+                    padding-left: 29%;
+                    background-color: 92e8a1;
+                    transform: translate(-2.7%)
+                }
+            }
+        }
+    }
+
+    #content{
+        .box{
+            display: block;
+            margin: 3% auto;
+            width: 250px;
+            height: 250px;
+            border-radius: 25%;
+            background-color: orange;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #navigation{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: auto;
+        background-color: green;
+        position: relative;
+        #title h1{
+            font-size: 30px;
+        }
+        #navigator{
+            display: flex;
+            // position: relative;
+
+            div{
+                padding: 30px 30px;
+                border-left: gray solid 1px;
+            }
+            div:hover{
+                background-color: #92e8a1;
+            }
+        }
+    }
+    
+    #content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 3%;
+        .box{
+            display: block;
+            margin: 3% auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 25%;
+            background-color: orange;
+            position: relative;
+            div{
+                position: absolute;
+                transition: 1s ease;
+            }
+            .viewer{
+                background-image: url('../images/Screen\ Recording\ 2019-07-01\ at\ 12.33.09\ PM.jpg');
+                border-radius: 25%;
+                display: block;
+                height: 100%;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+            .backend{
+                display: block;
+                height: 100px;
+                width: 100px;
+                background-color: aqua;
+                border-radius: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+        }
+        .box:hover{ 
+            .viewer{
+                transform: translateX(20%);
+                opacity: 0;
+            }
+            .backend{
+                opacity: 1;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
