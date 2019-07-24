@@ -8,11 +8,26 @@ a{
     color: inherit;
 }
 
+body{
+    background-color: #131515;
+    color: #0FF4C6;
+}
+
+.divider{
+    display: block;
+    height: 1px;
+    background-color: #0FF4C6;
+    margin: 3% 30px;
+}
+
+/* ------------------- Mobile Version ------------------ */
 @media only screen and (min-width: 0px){
+    /* ------------------- Beginning of Navigation ------------------ */
     #navigation{
+        margin-bottom: 578px!important;
         display: flex;
         flex-direction: column;
-        background-color: green;
+        background-color: wheat;
         position: relative;
         text-align: center;
         #title h1{
@@ -33,12 +48,17 @@ a{
                     margin-top: 0;
                     padding-right: 29%;
                     padding-left: 29%;
-                    background-color: 92e8a1;
                     transform: translate(-2.7%)
                 }
             }
         }
     }
+    /* ------------------- End of Navigation ------------------ */
+    /* ------------------- Beginning of Description ------------------ */
+    #description{
+        
+    }
+    /* ------------------- End of Description ------------------ */
 
     #content{
         .box{
@@ -47,37 +67,64 @@ a{
             width: 250px;
             height: 250px;
             border-radius: 25%;
-            background-color: orange;
         }
     }
 }
-
+/* ------------------- Desktop Version ------------------ */
 @media only screen and (min-width: 768px) {
+    /* ------------------- Beginning of Navigation------------------ */
     #navigation{
         display: flex;
+        z-index: 1;
+        opacity: .8;
         align-items: stretch;
         justify-content: space-between;
         flex-direction: row;
         margin: auto;
-        background-color: green;
+        color: #0FF4C6;
+        background-color: #131515;
         position: relative;
         #title h1{
             font-size: 30px;
+            margin: 8px 0;
         }
         #navigator{
             display: flex;
-            // position: relative;
 
             div{
-                padding: 30px 30px;
+                padding: 17px 30px;
                 border-left: gray solid 1px;
+                p a{
+                    padding: 0px;
+                }
             }
             div:hover{
-                background-color: #92e8a1;
+                background-color: #2B2C28;
             }
         }
     }
-    
+    /* ------------------- End of Navigation ------------------ */
+    /* ------------------- Beginning of Hero ------------------ */
+    #carouselExampleIndicators{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        .carousel-item{
+            min-height: 630px;
+            img{
+                height: 600px;
+                // max-width: 1000px;
+                margin: 0 auto;
+            }/*add larger media query to adjust height*/
+        }
+    }
+    /* ------------------- End of Hero ------------------ */
+    /* ------------------- Beginning of Description ------------------ */
+    #description{
+        margin: 3% 30px
+    }
+    /* ------------------- End of Description ------------------ */
+    /* ------------------- Starting Body Content ------------------ */
     #content{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -88,14 +135,13 @@ a{
             width: 300px;
             height: 300px;
             border-radius: 25%;
-            background-color: orange;
             position: relative;
             div{
                 position: absolute;
                 transition: 1s ease;
             }
             .viewer{
-                background-image: url('../images/Screen\ Recording\ 2019-07-01\ at\ 12.33.09\ PM.jpg');
+                // background-image: url('../images/Screen\ Recording\ 2019-07-01\ at\ 12.33.09\ PM.jpg');
                 border-radius: 25%;
                 display: block;
                 height: 100%;
@@ -107,10 +153,13 @@ a{
             }
             .backend{
                 display: block;
-                height: 100px;
-                width: 100px;
-                background-color: aqua;
-                border-radius: 100%;
+                // height: 100px;
+                // width: 100px;
+                text-align: center;
+                border-radius: 25%;
+                height: 100%;
+                background-color: #131515;
+                transform: trnaslate(-20%, -20%);
                 top: 0;
                 left: 0;
                 opacity: 0;
@@ -119,14 +168,48 @@ a{
         .box:hover{ 
             .viewer{
                 transform: translateX(20%);
+                transform: rotate(90deg);
                 opacity: 0;
             }
             .backend{
                 opacity: 1;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(50%, 50%);
             }
         }
+        /* ------------------- Beginning of Individual Content ------------------ */
+        #hoverBoard{
+            &-Img{
+                background-image: url('http://difundir.org/wp-content/uploads/2014/11/The-Real-Life-Hoverboard.jpg');
+            }
+        }
+
+        #LexusBoard{
+            h3{
+                margin-top: 4%;
+            }
+            &-Img{
+                background-image: url('https://cdn.wccftech.com/wp-content/uploads/2015/06/lexus.png');
+            }
+        }
+        
+        #contactLenses{
+            &-img{
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyTpTFCk2p9ct1oN5EzGRTNOp5v4bxGJ8mw7cgnmdArDNWzyOk');
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+        }
+
+        #sunGlasses{
+            &-img{
+                background-image: url('http://editorial.designtaxi.com/editorial-images/news-Visor120619/Visor-1.jpg');
+                background-size: cover;
+            }
+        }
+        /* ------------------- End of Individual Conent ------------------ */
+        /* ------------------- End of Body Content ------------------ */
     }
 }
