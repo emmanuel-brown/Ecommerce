@@ -24,7 +24,7 @@ body {
 @media only screen and (min-width: 0px) {
   /* ------------------- Beginning of Navigation ------------------ */
   #navigation {
-    margin-bottom: 578px !important;
+    margin-bottom: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -32,7 +32,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: wheat;
+    color: #0FF4C6;
+    background-color: #131515;
     position: relative;
     text-align: center;
   }
@@ -63,15 +64,58 @@ body {
             transform: translate(-2.7%);
   }
   /* ------------------- End of Navigation ------------------ */
+  #carouselExampleIndicators {
+    display: none;
+  }
   /* ------------------- Beginning of Description ------------------ */
+  #description #sumUp {
+    display: none;
+  }
   /* ------------------- End of Description ------------------ */
+  /* ------------------- Starting Body Content ------------------ */
   #content .box {
     display: block;
     margin: 3% auto;
     width: 250px;
     height: 250px;
     border-radius: 25%;
+    text-align: center;
+    opacity: 1;
   }
+  #content .box .backend {
+    opacity: .8;
+    background-color: #131515;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  #content .box .backend h3 {
+    padding-top: 22px;
+    font-size: 25px;
+  }
+  #content .box:hover .backend {
+    opacity: 0;
+  }
+  /* ------------------- Starting Individual Content ------------------ */
+  #hoverBoard {
+    background-image: url("http://difundir.org/wp-content/uploads/2014/11/The-Real-Life-Hoverboard.jpg");
+  }
+  #LexusBoard {
+    background-image: url("https://cdn.wccftech.com/wp-content/uploads/2015/06/lexus.png");
+  }
+  #contactLenses {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyTpTFCk2p9ct1oN5EzGRTNOp5v4bxGJ8mw7cgnmdArDNWzyOk");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #sunGlasses-img {
+    background-image: url("http://editorial.designtaxi.com/editorial-images/news-Visor120619/Visor-1.jpg");
+    background-size: cover;
+  }
+  /* ------------------- Starting Individual Content ------------------ */
+  /* ------------------- Starting Body Content ------------------ */
+  /* ------------------- End of Body Content ------------------ */
 }
 
 /* ------------------- Desktop Version ------------------ */
@@ -97,6 +141,7 @@ body {
     color: #0FF4C6;
     background-color: #131515;
     position: relative;
+    margin-bottom: 568px;
   }
   #navigation #title h1 {
     font-size: 30px;
@@ -120,6 +165,7 @@ body {
   /* ------------------- End of Navigation ------------------ */
   /* ------------------- Beginning of Hero ------------------ */
   #carouselExampleIndicators {
+    display: block;
     position: absolute;
     top: 0;
     width: 100%;
@@ -134,8 +180,8 @@ body {
   }
   /* ------------------- End of Hero ------------------ */
   /* ------------------- Beginning of Description ------------------ */
-  #description {
-    margin: 3% 30px;
+  #description #sumUp {
+    display: block;
   }
   /* ------------------- End of Description ------------------ */
   /* ------------------- Starting Body Content ------------------ */
@@ -156,6 +202,7 @@ body {
     height: 300px;
     border-radius: 25%;
     position: relative;
+    opacity: 1;
   }
   #content .box div {
     position: absolute;
