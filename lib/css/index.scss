@@ -1,3 +1,5 @@
+@import './navBar.scss';
+
 *{
     padding: 0;
     margin: 0;
@@ -23,37 +25,6 @@ body{
 /* ------------------- Mobile Version ------------------ */
 @media only screen and (min-width: 0px){
     /* ------------------- Beginning of Navigation ------------------ */
-    #navigation{
-        margin-bottom: 0px;
-        display: flex;
-        flex-direction: column;
-        color: #0FF4C6;
-        background-color: #131515;
-        position: relative;
-        text-align: center;
-        #title h1{
-            font-size: 30px;
-            margin-bottom: 0;
-        }
-        #navigator{
-            display: flex;
-            justify-content: space-around;
-            div {
-                margin: 0 auto;
-                p a{
-                    text-decoration: none;
-                    color: inherit;
-                    display: block;
-                    margin-top: 0;
-                    padding-right: 0%;
-                    margin-top: 0;
-                    padding-right: 29%;
-                    padding-left: 29%;
-                    transform: translate(-2.7%)
-                }
-            }
-        }
-    }
     /* ------------------- End of Navigation ------------------ */
     #carouselExampleIndicators{
         display: none;
@@ -122,39 +93,8 @@ body{
 }
 /* ------------------- Desktop Version ------------------ */
 @media only screen and (min-width: 768px) {
-    /* ------------------- Beginning of Navigation------------------ */
-    #navigation{
-        display: flex;
-        z-index: 1;
-        opacity: .8;
-        align-items: stretch;
-        justify-content: space-between;
-        flex-direction: row;
-        margin: auto;
-        color: #0FF4C6;
-        background-color: #131515;
-        position: relative;
-        margin-bottom: 568px;
-        #title h1{
-            font-size: 30px;
-            margin: 8px 0;
-        }
-        #navigator{
-            display: flex;
-
-            div{
-                padding: 17px 30px;
-                border-left: gray solid 1px;
-                p a{
-                    padding: 0px;
-                }
-            }
-            div:hover{
-                background-color: #2B2C28;
-            }
-        }
-    }
-    /* ------------------- End of Navigation ------------------ */
+    // /* ------------------- Beginning of Navigation------------------ */
+    // /* ------------------- End of Navigation ------------------ */
     /* ------------------- Beginning of Hero ------------------ */
     #carouselExampleIndicators{
         display: block;
@@ -208,8 +148,6 @@ body{
             }
             .backend{
                 display: block;
-                // height: 100px;
-                // width: 100px;
                 text-align: center;
                 border-radius: 25%;
                 height: 100%;
@@ -235,12 +173,14 @@ body{
         }
         /* ------------------- Beginning of Individual Content ------------------ */
         #hoverBoard{
+            background-image: none;
             &-Img{
                 background-image: url('http://difundir.org/wp-content/uploads/2014/11/The-Real-Life-Hoverboard.jpg');
             }
         }
 
         #LexusBoard{
+            background-image: none;
             h3{
                 margin-top: 4%;
             }
@@ -250,6 +190,7 @@ body{
         }
         
         #contactLenses{
+            background-image: none;
             &-img{
                 background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyTpTFCk2p9ct1oN5EzGRTNOp5v4bxGJ8mw7cgnmdArDNWzyOk');
                 background-repeat: no-repeat;
@@ -259,6 +200,7 @@ body{
         }
 
         #sunGlasses{
+            background-image: none;
             &-img{
                 background-image: url('http://editorial.designtaxi.com/editorial-images/news-Visor120619/Visor-1.jpg');
                 background-size: cover;

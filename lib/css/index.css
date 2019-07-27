@@ -1,26 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-body {
-  background-color: #131515;
-  color: #0FF4C6;
-}
-
-.divider {
-  display: block;
-  height: 1px;
-  background-color: #0FF4C6;
-  margin: 3% 30px;
-}
-
-/* ------------------- Mobile Version ------------------ */
+/* ------------------- Start of Mobile Version ------------------ */
 @media only screen and (min-width: 0px) {
   /* ------------------- Beginning of Navigation ------------------ */
   #navigation {
@@ -63,6 +41,82 @@ body {
     -webkit-transform: translate(-2.7%);
             transform: translate(-2.7%);
   }
+}
+
+/* ------------------- End of Mobile Version ------------------ */
+/* ------------------- Start of Navigation ------------------ */
+@media only screen and (min-width: 768px) {
+  /* ------------------- Beginning of Navigation ------------------ */
+  #navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+    opacity: .8;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+    color: #0FF4C6;
+    background-color: #131515;
+    position: relative;
+    margin-bottom: 568px;
+  }
+  #navigation #title h1 {
+    font-size: 30px;
+    margin: 8px 0;
+  }
+  #navigation #navigator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #navigation #navigator div {
+    padding: 17px 30px;
+    border-left: gray solid 1px;
+  }
+  #navigation #navigator div p a {
+    padding: 0px;
+  }
+  #navigation #navigator div:hover {
+    background-color: #2B2C28;
+  }
+}
+
+/* ------------------- End of Navigation ------------------ */
+/* ------------------- End of Desktop Version ------------------ */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #131515;
+  color: #0FF4C6;
+}
+
+.divider {
+  display: block;
+  height: 1px;
+  background-color: #0FF4C6;
+  margin: 3% 30px;
+}
+
+/* ------------------- Mobile Version ------------------ */
+@media only screen and (min-width: 0px) {
+  /* ------------------- Beginning of Navigation ------------------ */
   /* ------------------- End of Navigation ------------------ */
   #carouselExampleIndicators {
     display: none;
@@ -120,49 +174,6 @@ body {
 
 /* ------------------- Desktop Version ------------------ */
 @media only screen and (min-width: 768px) {
-  /* ------------------- Beginning of Navigation------------------ */
-  #navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    z-index: 1;
-    opacity: .8;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: auto;
-    color: #0FF4C6;
-    background-color: #131515;
-    position: relative;
-    margin-bottom: 568px;
-  }
-  #navigation #title h1 {
-    font-size: 30px;
-    margin: 8px 0;
-  }
-  #navigation #navigator {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #navigation #navigator div {
-    padding: 17px 30px;
-    border-left: gray solid 1px;
-  }
-  #navigation #navigator div p a {
-    padding: 0px;
-  }
-  #navigation #navigator div:hover {
-    background-color: #2B2C28;
-  }
-  /* ------------------- End of Navigation ------------------ */
   /* ------------------- Beginning of Hero ------------------ */
   #carouselExampleIndicators {
     display: block;
@@ -242,8 +253,14 @@ body {
   #content .box:hover .backend {
     opacity: 1;
   }
+  #content #hoverBoard {
+    background-image: none;
+  }
   #content #hoverBoard-Img {
     background-image: url("http://difundir.org/wp-content/uploads/2014/11/The-Real-Life-Hoverboard.jpg");
+  }
+  #content #LexusBoard {
+    background-image: none;
   }
   #content #LexusBoard h3 {
     margin-top: 4%;
@@ -251,10 +268,16 @@ body {
   #content #LexusBoard-Img {
     background-image: url("https://cdn.wccftech.com/wp-content/uploads/2015/06/lexus.png");
   }
+  #content #contactLenses {
+    background-image: none;
+  }
   #content #contactLenses-img {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyTpTFCk2p9ct1oN5EzGRTNOp5v4bxGJ8mw7cgnmdArDNWzyOk");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  #content #sunGlasses {
+    background-image: none;
   }
   #content #sunGlasses-img {
     background-image: url("http://editorial.designtaxi.com/editorial-images/news-Visor120619/Visor-1.jpg");

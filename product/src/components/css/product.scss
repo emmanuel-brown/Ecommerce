@@ -1,0 +1,58 @@
+@import "./navBar.scss";
+
+@media only screen and (min-width: 0px){
+    #filter{
+        #catagory{
+        text-align: center;
+        padding: 5% auto;
+        font-size: 25px;
+        margin: 0px auto;
+        padding: 0px -1%;
+        }
+        #catagories{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border-top: #4C6085 1px solid;
+            border-bottom: #4C6085 1px solid;
+        }
+    }
+
+    .contain{
+        border: 1px #0FF4C6 solid;
+        width: 33%;
+        h3{
+            border: 1px #0FF4C6 solid;
+        }
+        .options{
+            margin-top: 1%;
+        }
+        div{
+            div:hover{
+                background-color: #0FF4C6;
+                color: #131515;
+            }
+        }
+    }
+
+    #content{
+        :hover{
+            background-color: #2B2C28;
+        }
+        &-img{
+            width: auto;
+            height: 150px;
+        }
+        .block{
+            display: flex;
+            padding: 10px 0px;
+            border-bottom: 1px #0FF4C6 solid;
+            .info{
+                display: block;
+            }
+        }
+        // #TeslaModel3{
+
+        // }
+    }
+}
