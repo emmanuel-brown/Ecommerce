@@ -3,6 +3,16 @@ import HoverBoardImg from'../components/images/hoverBoard.jpg';
 import HoverCraft from'../components/images/hoverCraft.jpg';
 import Contacts from'../components/images/contacts.jpeg';
 import Tesla from'../components/images/tesla.jpg';
+import SgnlWrist from '../components/images/sgnlWristband.jpg';
+import Tap from '../components/images/tap.gif';
+import EyeTracker from '../components/images/eyeTracker.jpeg';
+import lookingGlass from '../components/images/lookingGlass.jpeg';
+import Leap from '../components/images/leapMotion.gif';
+import Oled from '../components/images/oled-thin.jpeg';
+import translateEarbuds from '../components/images/translateEarbuds.jpg';
+import Airselfie from '../components/images/airselfie.jpg';
+
+
 
 
 class DoIt extends React.Component{
@@ -13,19 +23,19 @@ class DoIt extends React.Component{
                 {
                     name: 'Hover Board',
                     price: 7000,
-                    description: `Board`,
+                    description: `compliance`,
                     image: HoverBoardImg
                 },
                 {
                     name: 'Lexus Board',
                     price: 10000,
-                    description: `Board`,
+                    description: `compliance`,
                     image: HoverCraft,
                 },
                 {
                     name: "Contact Lenses",
                     price: 200,
-                    description: `Eye Technology`,
+                    description: `wearable`,
                     image: Contacts,
                 },
                 {
@@ -33,6 +43,54 @@ class DoIt extends React.Component{
                     price: `35000`,
                     description: "vehicle",
                     image: Tesla,
+                },
+                {
+                    name: "SGNL Wristbankd",
+                    price: '149',
+                    description: "wearable",
+                    image: SgnlWrist,
+                },
+                {
+                    name: "Tap Keyboard",
+                    price: "199",
+                    description: "wearable",
+                    image: Tap
+                },
+                {
+                    name: "Tobi Eye Tracker",
+                    price: "168",
+                    description: "accessory",
+                    image: EyeTracker
+                },
+                {
+                    name: "Looking Glass Halographic Display",
+                    price: "599", 
+                    description: "accessory",
+                    image: lookingGlass
+                },
+                {
+                    name: "Leap Motion",
+                    price: "80",
+                    description: "accessory",
+                    image: Leap,
+                },
+                {
+                    name: "Paper-Thin OLED TV",
+                    price: "9999",
+                    description: "compliance",
+                    image: Oled
+                },
+                {
+                    name: "Airselfie Mini Drone",
+                    price: "199",
+                    description: "compliance",
+                    image: Airselfie,
+                },
+                {
+                    name: "Translating Earphones",
+                    price: "",
+                    description: "wearable",
+                    image: translateEarbuds,
                 }
             ],
         }
@@ -77,7 +135,7 @@ class DoIt extends React.Component{
     }
 
     render(){
-        console.table(this.state.display);
+        // console.table(this.state.display);
         let deploy = []
         this.state.display.forEach((product1) =>{
             deploy.push(
@@ -118,8 +176,8 @@ class DoIt extends React.Component{
                         <div id="types" className="contain">
                             <h3>types</h3>
                             <div className="options">
-                                <div>Boards</div>
-                                <div>Eyes</div>
+                                <div>Compliance</div>
+                                <div>wearable</div>
                                 <div>Vehicle</div>
                             </div>
                         </div>
