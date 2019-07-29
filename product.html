@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="lib/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/css/product.css"/>
     <link rel="stylesheet" type="text/css" href="./lib/css/normalize.css"/>
     <title>Ecomerce</title>
   </head>
@@ -21,7 +21,180 @@
         <div><p><a href="./contact.html">Contact</a></p></div>
       </div>
     </nav>
-    
+    <div id="filter">
+        <div id="catagory">Filter</div>
+        <div id="catagories">
+            <div id="price" class="contain">
+                <h3>Prices</h3>
+                <div class="options">
+                    <div onclick="lowToHigh()">Low to high</div>
+                    <div onclick="highToLow()">High to low</div>
+                </div>
+            </div>
+            <div id="alphabet" class="contain">
+                <h3>Alphabetical</h3>
+                <div class="options">
+                    <div onclick="alphaUp()">[A-Z]</div>
+                    <div onclick="alphaDown()">[Z-A]</div>
+                </div>
+            </div>
+            <div id="types" class="contain">
+                <h3>types</h3>
+                <div class="options">
+                    <div onclick="Cata_compliance()">compliance</div>
+                    <div onclick="Cata_wearable()">wearable</div>
+                    <div onclick="Cata_vehicle()">Vehicle</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="content">
+        <div id="HoverBoard" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/hoverBoard.jpg" alt="Hover Board"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Hover Board</h3>
+                    <h4 class="price">7000</h4>
+                    <h4 class="description">compliance vehicle</h4>
+                </div>
+            </div>
+        </div>
+        <div id="LexusBoard" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/hoverCraft.jpg" alt="Lexus Board"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Lexus Board</h3>
+                    <h4 class="price">10000</h4>
+                    <h4 class="description">compliance vehicle</h4>
+                </div>
+            </div>
+        </div>
+        <div id="ContactLenses" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/contacts.jpeg" alt="Contact Lenses"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Contact Lenses</h3>
+                    <h4 class="price">200</h4>
+                    <h4 class="description">wearable</h4>
+                </div>
+            </div>
+        </div>
+        <div id="TeslaModel3" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/tesla.jpg" alt="Tesla Model 3"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Tesla Model 3</h3>
+                    <h4 class="price">35000</h4>
+                    <h4 class="description">vehicle</h4>
+                </div>
+            </div>
+        </div>
+        <div id="SGNLWristband" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/sgnlWristband.jpg" alt="SGNL Wristband"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">SGNL Wristband</h3>
+                    <h4 class="price">149</h4>
+                    <h4 class="description">wearable</h4>
+                </div>
+            </div>
+        </div>
+        <div id="TapKeyboard" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/tap.gif" alt="Tap Keyboard"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Tap Keyboard</h3>
+                    <h4 class="price">199</h4>
+                    <h4 class="description">wearable</h4>
+                </div>
+            </div>
+        </div>
+        <div id="TobiEyeTracker" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/eyeTracker.jpeg" alt="Tobi Eye Tracker"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Tobi Eye Tracker</h3>
+                    <h4 class="price">149</h4>
+                    <h4 class="description">compliance</h4>
+                </div>
+            </div>
+        </div>
+        <div id="LookingGlassHalographicDisplay" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/lookingGlass.jpeg" alt="Looking Glass Halographic Display"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Looking Glass Halographic Display</h3>
+                    <h4 class="price">599</h4>
+                    <h4 class="description">compliance</h4>
+                </div>
+            </div>
+        </div>
+        <div id="LeapMotion" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/leapMotion.gif" alt="Leap Motion"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Leap Motion</h3>
+                    <h4 class="price">80</h4>
+                    <h4 class="description">compliance</h4>
+                </div>
+            </div>
+        </div>
+        <div id="Paper-ThinOLEDTV" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/oled-thin.jpeg" alt="Paper-Thin OLED TV"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Paper-Thin OLED TV</h3>
+                    <h4 class="price">9999</h4>
+                    <h4 class="description">compliance</h4>
+                </div>
+            </div>
+        </div>
+        <div id="AirselfieMiniDrone" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/airselfie.jpg" alt="Airselfie Mini Drone"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Airselfie Mini Drone</h3>
+                    <h4 class="price">199</h4>
+                    <h4 class="description">compliance</h4>
+                </div>
+            </div>
+        </div>
+        <div id="TranslatingEarphones" class="box">
+            <div class="block">
+                <div class="show">
+                    <img id="content-img" src="./lib/images/images/translateEarbuds.jpg" alt="Translating Earphones"/>
+                </div>
+                <div class="info">
+                    <h3 class="name">Translating Earphones</h3>
+                    <h4 class="price">178</h4>
+                    <h4 class="description">wearable</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./lib/js/order.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

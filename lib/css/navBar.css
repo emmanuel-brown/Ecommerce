@@ -1,5 +1,9 @@
 /* ------------------- Start of Mobile Version ------------------ */
 @media only screen and (min-width: 0px) {
+  body {
+    background-color: #131515;
+    color: #0FF4C6;
+  }
   /* ------------------- Beginning of Navigation ------------------ */
   #navigation {
     margin-bottom: 0px;

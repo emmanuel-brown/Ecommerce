@@ -1,11 +1,14 @@
 import React from 'react';
 import '../components/css/normalize.css';
 import '../components/css/product.scss';
-import Order from '../components/doIt';
+import Order from '../components/order2';
 
 
 
 class Product extends React.Component{
+    google(){
+        window.location = 'home';
+    }
     render(){
         return(
             <div>
@@ -14,7 +17,7 @@ class Product extends React.Component{
                     <h1>Future Fancy</h1>
                 </div>
                 <div id="navigator">
-                    <div><p><a href="../../../index.html">Home</a></p></div>
+                    <div><p onClick={this.google.bind(this)}><a /*href="../../../index.html"*/>Home</a></p></div>
                     <div><p><a href="./product.html">Product</a></p></div>
                     <div><p><a href="./contact.html">Contact</a></p></div>
                 </div>
